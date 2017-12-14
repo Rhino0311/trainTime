@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NighTrain</title>
+	<link rel= "stylesheet" type= "text/css" href= "assets/css/reset.css">
+	<link rel= "stylesheet" type= "text/css" href= "assets/css/style.css">
+	<link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+	<br><br>
+
+	
+	<div class="jumbotron">
+		<h1>NighTrain</h1>
+	</div>
+
+	<div class="row">
+
+		
+		<div class="col-lg-12">
+			<div class="jumbo">
+				<div class="panel-heading">
+					<h3>Train Schedule</h3>
+				</div>
+				<div class="panel-body">
+				<table class="table">
+					<tr>
+						<th>Train Name</th>
+						<th>Destination</th>
+						<th>Frequency(min)</th>
+						<th>Next Arrival</th>
+						<th>Minutes Away</th>
+					</tr>
+				</table>	
+				</div>
+			</div>
+		
+
+
+
+	<div class="row">
+
+		
+		<div class="col-lg-12">
+			<div class="panel panel-success">
+				<div class="jumbo">
+					<h3> Add Train</h3>
+				</div>
+				<div class="panel-body">
+
+					<form role="form">
+						<div class="form-group">
+							<label for="text">Train Name:</label>
+							<input type="text" class="form-control" id="name-input">
+						</div>
+						<div class="form-group">
+							<label for="text">Destination:</label>
+							<input type="text" class="form-control" id="destination-input">
+						</div>
+						<div class="form-group">
+							<label for="text">1st Train Time (Mil Time):</label>
+							<input type="number" class="form-control" id="time-input">
+						</div>
+						<div class="form-group">
+							<label for="text">Frequency(min):</label>
+							<input type="number" class="form-control" id="frequency-input">
+						</div>
+
+						<button type="submit" class="btn btn-default" id="submit">Submit</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="assets/javascript/app.js"></script>
+
+</body>
+</html>
